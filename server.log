@@ -1,0 +1,90 @@
+INFO:     Started server process [62116]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:main:Processing file: sample.csv
+ERROR:main:Row 1: invalid search_terms - unmatched ']' (<unknown>, line 1)
+INFO:     127.0.0.1:64446 - "POST /process HTTP/1.1" 400 Bad Request
+INFO:main:Processing file: sample_valid.csv
+ERROR:main:Row 1: invalid search_terms - unexpected character after line continuation character (<unknown>, line 1)
+INFO:     127.0.0.1:64591 - "POST /process HTTP/1.1" 400 Bad Request
+INFO:main:Processing file: sample_ok.csv
+INFO:main:Processing row 1/1 with 2 search terms
+INFO:main:  Searching term 1/2: 'python'
+INFO:main:Using authenticated search for 'python'
+INFO:httpx:HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+INFO:main:Searching Bluesky: query='python', page=1, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 1
+INFO:main:Searching Bluesky: query='python', page=2, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=100 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 2
+INFO:main:Searching Bluesky: query='python', page=3, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=200 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 3
+INFO:main:Searching Bluesky: query='python', page=4, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=300 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 4
+INFO:main:Searching Bluesky: query='python', page=5, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=400 "HTTP/1.1 200 OK"
+INFO:main:Found 99 posts for query 'python' on page 5
+INFO:main:Searching Bluesky: query='python', page=6, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=500 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 6
+INFO:main:Searching Bluesky: query='python', page=7, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=600 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 7
+INFO:main:Searching Bluesky: query='python', page=8, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=700 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 8
+INFO:main:Searching Bluesky: query='python', page=9, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=800 "HTTP/1.1 200 OK"
+INFO:main:Found 99 posts for query 'python' on page 9
+INFO:main:Searching Bluesky: query='python', page=10, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=python&limit=100&cursor=900 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'python' on page 10
+INFO:main:Search complete for 'python': 998 posts in last 7 days
+INFO:main:    Result: 998
+INFO:main:  Searching term 2/2: 'fastapi'
+INFO:main:Using authenticated search for 'fastapi'
+INFO:main:Searching Bluesky: query='fastapi', page=1, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100 "HTTP/1.1 200 OK"
+INFO:main:Found 99 posts for query 'fastapi' on page 1
+INFO:main:Searching Bluesky: query='fastapi', page=2, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=100 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'fastapi' on page 2
+INFO:main:Searching Bluesky: query='fastapi', page=3, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=200 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'fastapi' on page 3
+INFO:main:Searching Bluesky: query='fastapi', page=4, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=300 "HTTP/1.1 200 OK"
+INFO:main:Found 100 posts for query 'fastapi' on page 4
+INFO:main:Searching Bluesky: query='fastapi', page=5, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=400 "HTTP/1.1 200 OK"
+INFO:main:Found 99 posts for query 'fastapi' on page 5
+INFO:main:Searching Bluesky: query='fastapi', page=6, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=500 "HTTP/1.1 200 OK"
+INFO:main:Found 98 posts for query 'fastapi' on page 6
+INFO:main:Searching Bluesky: query='fastapi', page=7, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=600 "HTTP/1.1 200 OK"
+INFO:main:Found 97 posts for query 'fastapi' on page 7
+INFO:main:Searching Bluesky: query='fastapi', page=8, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=700 "HTTP/1.1 200 OK"
+INFO:main:Found 98 posts for query 'fastapi' on page 8
+INFO:main:Searching Bluesky: query='fastapi', page=9, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=800 "HTTP/1.1 200 OK"
+INFO:main:Found 99 posts for query 'fastapi' on page 9
+INFO:main:Searching Bluesky: query='fastapi', page=10, authenticated=True
+INFO:httpx:HTTP Request: GET https://bsky.social/xrpc/app.bsky.feed.searchPosts?q=fastapi&limit=100&cursor=900 "HTTP/1.1 200 OK"
+INFO:main:Found 94 posts for query 'fastapi' on page 10
+INFO:main:Search complete for 'fastapi': 35 posts in last 7 days
+INFO:main:    Result: 35
+INFO:main:Successfully processed sample_ok.csv
+INFO:     127.0.0.1:64723 - "POST /process HTTP/1.1" 200 OK
+INFO:main:Processing file: sample.csv
+ERROR:main:Row 1: invalid search_terms - unmatched ']' (<unknown>, line 1)
+INFO:     127.0.0.1:64816 - "POST /process HTTP/1.1" 400 Bad Request
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62116]
