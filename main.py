@@ -1,5 +1,8 @@
 import import_dataframe
-import get_average
+import get_averages
+import best_offer
+from scipy.optimize import fsolve
+
 
 def main():
 
@@ -9,26 +12,30 @@ def main():
   df = import_dataframe.import_dataframe(filepath)
 
   if df is not None:
-    print("\n Data loaded successfully! \n")
     print(df.head(), '\n')
-    print(f"Total rows: {len(df)}")
-
+    print(f"Total rows: {len(df)}",'\n', "*" * 40, '\n')
   else:
-    print("Could not load the data")
+    print("Seriously? You fucked up loading the data? I'm jk loading the data is a pain")
     return
 
-  print('\n', "*" * 40, '\n')
+  # Step 2: Compute the averages
+  avgs = get_averages.get_averages(df)
 
-
-  #Step 2: Compute the average
-
-  avg = get_average.get_average(df)
-
-  if avg is not None:
-    print("Average calculated successfully! \n")
-    print(f"The average score is {avg} \n")
+  if avgs is not None:
+    print(f"The average score is {avgs[0]} and ratio is {avgs[1]}", '\n', "*" * 40, '\n')
   else:
-    print("Could not compute average :(")
+    print("Bruh you didn't compute the averages")
+    return
+
+  # Step 3: Solve the equation to get the score:
+  equations = best_offer.equations
+  initial_guess = [1,1]
+  offer = fsolve(lambda x: equations(x, avgs), initial_guess)
+
+  if offer is not None:
+    print(f"Before rounding, if you're to accept the 30% equity ownership offer, you should add a vesting period of {offer[1] / 365} years and a cliff at {offer[0] / 12} months.")
+  else:
+    print("Uh oh! No offer found...")
     return
 
 
