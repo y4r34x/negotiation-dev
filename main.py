@@ -1,46 +1,59 @@
-import import_dataframe
-import get_averages
-import best_offer
-from scipy.optimize import fsolve
-import numpy as np
+#!/usr/bin/env python3
+"""
+Main pipeline for contract analysis.
+
+This script analyzes HTML files to predict both support contract status
+and auto-renewal status, outputting results as tab-separated values.
+"""
+
+import sys
+import argparse
+from pathlib import Path
+
+from detect_support_contract import (
+    parse_html_file,
+    extract_text_content,
+    detect_support_contract,
+    detect_auto_renew
+)
 
 
 def main():
+    """Main function to run the pipeline."""
+    parser = argparse.ArgumentParser(
+        description='Analyze HTML file for support contract and auto-renewal status'
+    )
+    parser.add_argument(
+        'html_file',
+        type=str,
+        help='Path to the HTML file to analyze'
+    )
+    
+    args = parser.parse_args()
+    
+    # Convert to Path object for better handling
+    file_path = Path(args.html_file)
+    
+    # Parse the HTML file
+    soup = parse_html_file(file_path)
+    if soup is None:
+        sys.exit(1)
+    
+    # Extract text content
+    text = extract_text_content(soup)
+    if not text:
+        print("Error: Could not extract text content from HTML file.", file=sys.stderr)
+        sys.exit(1)
+    
+    # Detect support contract status
+    is_support_contract = detect_support_contract(text)
+    
+    # Detect auto-renewal status
+    is_auto_renew = detect_auto_renew(text)
+    
+    # Output results as tab-separated values: support_contract<TAB>auto_renewal
+    print(f"{is_support_contract}\t{is_auto_renew}")
 
-  filepath = 'data.tsv'
-  print()
 
-  # Step 1: Import the Data
-  df = import_dataframe.import_dataframe(filepath)
-
-  if df is not None:
-    print(df.head())
-    print(f"\n Total rows: {len(df)}")
-  else:
-    print("Seriously? You fucked up loading the data? I'm jk loading the data is a pain")
-    return
-
-  # Step 2: Compute the averages
-  avgs = get_averages.get_averages(df)
-
-  if avgs is not None:
-    print(f"\n The average score is {avgs[0]} and ratio is {avgs[1]}")
-  else:
-    print("Bruh you didn't compute the averages")
-    return
-
-  # Step 3: Solve the equation to get the score:
-  equations = best_offer.equations
-  initial_guess = [1,1]
-  set_equity = 0.3
-  offer = fsolve(lambda x: equations(x, avgs, set_equity), initial_guess)
-
-  if offer is not None:
-    print(f"\n Before rounding, if you're to accept the 30% equity ownership offer, you should add a vesting period of {np.round((offer[1] / 365),2)} years and a cliff at {np.round((offer[0] / 365),2)} years. \n")
-  else:
-    print("Uh oh! No offer found...")
-    return
-
-
-if __name__ == "__main__":
-  main()
+if __name__ == '__main__':
+    main()
