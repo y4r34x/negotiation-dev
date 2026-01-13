@@ -20,6 +20,8 @@ from detect_support_contract import (
 
 def main():
     """Main function to run the pipeline."""
+    print("Starting contract analysis pipeline...")
+
     parser = argparse.ArgumentParser(
         description='Analyze HTML file for support contract and auto-renewal status'
     )

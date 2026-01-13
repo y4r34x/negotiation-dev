@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "type": "EX-10.6",
+    "sequence": "2",
+    "filename": "nexscient_ex106.htm",
+    "description": "SOFTWARE SUPPORT AGREEMENT"
+  },
+  "sections": [
+    {
+      "number": "0",
+      "title": "Preamble",
+      "text": "nexscient_ex106.htm Document created using EDGARMaster EXHIBIT 10.6 SOFTWARE SUPPORT AGREEMENT This SOFTWARE PURCHASE AGREEMENT is entered into as of this 13 th day of February 2025 (the Effective Date) between Nexscient, Inc ., a Delaware corporation (the Buyer) and i2 Analytics, Inc ., a California corporation (the Seller) (this Agreement). The Company and the Seller are sometimes referred to herein individually as a Party and collectively as the Parties. This Agreement supersedes all previous support agreements between Buyer and Seller. The terms of this Agreement are based upon the following: RECITALS WHEREAS , the Buyer purchased Software from the Seller pursuant to terms and conditions described in the Software Purchase Agreement dated February 13, 2025 (the Software); and WHEREAS , the Buyer wishes to retain the services of the Seller to provide support and maintenance services on the Software purchased from the Seller, and the Seller wishes to provide such support services to the Buyer during the implementation and transition period subject to the conditions set forth in this Agreement (Software Support); NOW THEREFORE, in consideration of the premises and mutual covenants and agreements contained in this Agreement and other valuable consideration, the receipt and sufficiency of which is hereby acknowledged, the parties agree as follows:"
+    },
+    {
+      "number": "1",
+      "title": "SCOPE OF THE AGREEMENT",
+      "text": ""
+    },
+    {
+      "number": "1.1",
+      "title": "Term of the Agreement",
+      "text": "The term of the Agreement commences with the Effective Date noted above and remains in effect until terminated as provided in this agreement."
+    },
+    {
+      "number": "1.2",
+      "title": "Software Support Orders",
+      "text": "The Services to be delivered to Buyer are summarized in the enclosed Software Support Order (the Service Order) (Exhibit A)."
+    },
+    {
+      "number": "1.3",
+      "title": "Service Order Term",
+      "text": "For each Service Order, Seller shall provide services for a period of six (6) months from the Effective Date of the Service Order, unless otherwise specified on the Service Order (the Term)."
+    },
+    {
+      "number": "1.4",
+      "title": "Renewal of Support Service Order",
+      "text": "The last day of the Term is considered the Renewal Date for the Service Order. On the Renewal Date, Software Support services will renew automatically for an additional six months of service and with the same maintenance and support package, unless either party notifies the other of its desire to either revise or terminate the Service Order for the following Term. Notification shall be in writing and sent by regular mail or facsimile at the addresses set forth above. Notification shall be given within thirty (30) days of the Renewal Date."
+    },
+    {
+      "number": "1.5",
+      "title": "Additional Orders for Services",
+      "text": "If during the Term of a Service Order, Buyer wishes to order additional service not provided under the Service Order, Buyer may request additional services pursuant to written purchase orders."
+    },
+    {
+      "number": "1.6",
+      "title": "Additional Software Purchases During Service Order Year",
+      "text": "If during the Term of the Service Order, Buyer purchases additional Software or Upgrades, Seller will enroll the components in the Service Order plan, according to the terms of the Service Order in effect for that Software at the time. The succeeding Software Support Invoice will show an added charge for the added component(s)."
+    },
+    {
+      "number": "2",
+      "title": "CHANGES TO SERVICES AND PRICE LISTS",
+      "text": "Seller may amend or revise prices and services at any time upon thirty (30) days written notice to Buyer, subject to Buyers consent, which shall not be unreasonably denied. Seller agrees not to amend support agreement pricing until completion of initial term. If Buyer does not consent to suggested modifications by Seller, both parties shall use reasonable efforts to reach an amended schedule of services and prices agreeable to both parties."
+    },
+    {
+      "number": "2.1",
+      "title": "Service Charges",
+      "text": "Service charges for Software Support are set forth in the Software Support Order attached to this Agreement as Exhibit A."
+    },
+    {
+      "number": "2.2",
+      "title": "Invoice and Payment Schedule",
+      "text": "The service charges for Software Support shall be payable monthly in advance of the period for which support services are rendered. Any charges for any other products or services will be invoiced when provided and are due and payable upon receipt of such invoice."
+    },
+    {
+      "number": "2.3",
+      "title": "Travel and Expense Charges",
+      "text": "Buyer shall pay travel, accommodations, and other reasonable expenses including but not limited to meals, local transportation, and business communications of Seller personnel for all on-site services provided by Seller or its representatives, except as expressly provided in the Software Support Order."
+    },
+    {
+      "number": "3",
+      "title": "PAYMENTS AND CORRESPONDENCE",
+      "text": "3.1. Payments and Payee Buyer may issue payments for Software Support fees through electronic wire transfer. The payment instructions are displayed in Exhibit B."
+    },
+    {
+      "number": "3.2",
+      "title": "Inquiries and Correspondence",
+      "text": "All notices required or permitted to be delivered in connection with this Agreement shall be in writing and shall be delivered to the following addresses: 2 To i2Analytics, Inc.: i2 Analytics, Inc. To Nexscient, Inc.: Nexscient, Inc. ________________________________ _______________________________ 2029 Century Park East, Suite 400 Los Angeles, CA 90067 Attention: Edward Morales Managing Director Attention: Fred E. Tannous President & CEO Email: eddie@i2analytics.com Email: fred@nexscient.com"
+    },
+    {
+      "number": "4",
+      "title": "LIMITATION OF SERVICES",
+      "text": ""
+    },
+    {
+      "number": "4.1",
+      "title": "Software",
+      "text": "Software Support shall not apply unless the Software is operated in strict accordance with the documentation furnished with the Software, and any subsequent updates to the documentation provided by Seller."
+    },
+    {
+      "number": "4.2",
+      "title": "Services Do Not Extend to Non-Supported Software",
+      "text": "Software Support is void in cases where Buyer has made unauthorized use of unapproved Software, or anything which is not directly a part of the Software, as supported by Seller."
+    },
+    {
+      "number": "4.3",
+      "title": "Maintaining Current Software",
+      "text": "As part of your software support agreement, Seller will continue to supply Buyer with upgrades that will update the latest versions of existing software modules."
+    },
+    {
+      "number": "5",
+      "title": "LIMITATION OF LIABILITIES",
+      "text": ""
+    },
+    {
+      "number": "5.1",
+      "title": "Software Application",
+      "text": "Except as specifically provided for in this Agreement, Seller extends no warranty, express or implied, including any warranty of merchantability or fitness for a particular purpose, to Buyer for the software Application or any other maintenance or support or for any additional service which Buyer may request through Seller for use in conjunction with the Software Support services or any other maintenance or support."
+    },
+    {
+      "number": "5.2",
+      "title": "Cumulative Liability",
+      "text": "Neither Seller nor any of its subcontractors agents shall be liable for any loss or damage to the Software Application or other property arising in connection with the Services or any other maintenance or support provided by Seller or its subcontractor under this Agreement. Notwithstanding any other provision of the Agreement, under no circumstances shall Seller or any of its subcontractors be liable to Buyer or any third party claiming under Buyer, for special, incidental, indirect or consequential damages as a result of a breach of any provision of the Agreement, or for any loss, damage, or any expense directly or indirectly arising from Buyers use or inability to use or a third partys use, or inability to use, whether or not authorized, of the software or its components, either separately or in combination with other equipment, or for commercial loss of any kind, including costs of procurement of substitute services, loss of profits, and interruption of services. Sellers cumulative liability under the Agreement for all causes of action shall be limited to and shall not exceed the amounts paid by Buyer under the Agreement, and in no event shall Seller be liable to Buyer for any amount exceeding amounts paid under the Agreement."
+    },
+    {
+      "number": "5.3",
+      "title": "Non-Performance Recourse",
+      "text": "In all situations involving performance or non-performance by Seller under this Agreement, Buyers sole and exclusive remedy is (1) to terminate this Agreement by written notice to Seller and (2) to receive a pro-rated refund for the pre-paid Services, less any sum due and owing to Seller."
+    },
+    {
+      "number": "6",
+      "title": "ERROR RESOLUTION RESPONSE",
+      "text": "Our engineering personnel will respond to reported troubles under the following guidelines:"
+    },
+    {
+      "number": "6.1",
+      "title": "Trouble Priorities",
+      "text": "Priority 1 : A fatal error that has no work around. Generally, these errors will not allow a user to complete a required function. Priority 2 : An error that prevents a function from being completed as normally processed, but that has a work around that allows the user to complete the task at hand. Priority 3 : An error that does not stop a user from completing a task but does not work as would be expected."
+    },
+    {
+      "number": "6.2",
+      "title": "Error Resolution Response",
+      "text": "Once an errors priority has been established and the relevant information has been collected, Seller will respond within the following guidelines: Priority 1 : During regular business hours, calls will be answered immediately; after regular business hours, a callback to the Buyer will be within 30 minutes of the initial call. Seller will work full time until an interim workaround or a permanent resolution is provided. Priority 2 : A resolution will be provided within five working days. The resolution could be a work around, or some other interim measure, if that interim measure is considered acceptable. Priority 3 : A resolution will be provided in a future release of the product. Although Seller plans to resolve all problems in less time than the goals; some troubles will simply take longer than the guidelines due to their complexity. Seller will make its best effort to provide trouble resolution within these response time goals. In cases where there is a problem that is outside Sellers control, for example, a problem with the operating system, database software, or any other part of the system that is not part of the Software, Seller will not be held liable or responsible for the problem."
+    },
+    {
+      "number": "7",
+      "title": "MISCELLANEOUS",
+      "text": ""
+    },
+    {
+      "number": "7.1",
+      "title": "Time Limitation for Action",
+      "text": "Any action for breach or to enforce any provision of this Agreement shall be brought within one year after the cause of action accrues or it will be deemed waived and barred."
+    },
+    {
+      "number": "7.2",
+      "title": "Renegotiation of Unenforceable Provisions",
+      "text": "If any provision of this Agreement is held to be unenforceable or invalid, the remaining provisions shall be given full effect, and the parties shall negotiate, in good faith, a substitute valid provision which most nearly approximates the parties intent of the unenforceable or invalid provision."
+    },
+    {
+      "number": "7.3",
+      "title": "Force Majeure",
+      "text": "Seller shall have no liability whatsoever for any delay or failure in providing Software Support or any other maintenance or support attributable to fires, strikes, embargoes, earthquakes, storms, wars, acts of war, governmental or state or any other contingency beyond the reasonable control of Seller."
+    },
+    {
+      "number": "7.4",
+      "title": "Severability of Provisions",
+      "text": "The provisions of this Agreement are severable, and if any provision hereof is held invalid or unenforceable, the remaining provisions of this Agreement shall not be affected thereby. Furthermore, failure by either party at any time to require the other party to perform any obligation under this Agreement shall not affect the partys right subsequently to require the other party to perform that obligation."
+    },
+    {
+      "number": "7.5",
+      "title": "Assignment",
+      "text": "Buyer shall not assign this Agreement or any of its rights or obligations hereunder without the prior written consent of Seller; such consent shall not be unreasonably withheld. Seller may assign any obligation or Order placed under this Agreement to an affiliate, subcontractor, or other third party, provided that a comparable quality of service is provided to Buyer."
+    },
+    {
+      "number": "7.6",
+      "title": "Waiver",
+      "text": "No provision of this Agreement may be waived by either party, except in writing signed by that party. The waiver of any portion of this Agreement with respect to any person or invention, discovery, improvement, or work of authorship shall be construed narrowly and shall not affect the right of the party granting the waiver to enforce any other provision of this Agreement or to enforce any provision of this Agreement with respect to any other person or invention, discovery, improvement, or work of authorship."
+    },
+    {
+      "number": "7.7",
+      "title": "Governing Law, Venue, and Dispute Arbitration",
+      "text": "The English language shall govern all interpretations of this Agreement. This Agreement and any amendments hereto will be governed by the laws of the State of Delaware. The proper venue for any proceeding at law or in equity or under a mediation or arbitration provision (if any) will be Los Angeles County, California, and the parties waive any right to object to the venue. The parties agree that prior to any legal action the parties in good faith will mediate any disputes between them. If any suit or action is filed by any party to enforce this Agreement, the prevailing party shall be entitled to recover reasonable attorney fees incurred in preparation or in prosecution or defense of such suit or action as fixed by the trial court, and if any appeal is taken from the decision of the trial court, reasonable attorney fees as fixed by the appellate court."
+    },
+    {
+      "number": "7.8",
+      "title": "Entire Agreement",
+      "text": "If any conflicting Order or invoice arises which does not comply with the terms of this Agreement, the terms identified in this Agreement will prevail. This Agreement represents the complete and entire agreement between Seller and Buyer and supersedes all prior agreements, statements, or negotiations with respect to the subject of Software Support."
+    }
+  ]
+}

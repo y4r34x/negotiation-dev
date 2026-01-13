@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "type": "EX-10.2",
+    "sequence": "2",
+    "filename": "seebeks_ex1002.htm",
+    "description": "SOFTWARE PURCHASE AGREEMENT"
+  },
+  "sections": [
+    {
+      "number": "0",
+      "title": "Preamble",
+      "text": "Exhibit 10.2 SOFTWARE PURCHASE AGREEMENT This Software Purchase Agreement (Agreement)\nis made and entered into as of May 26, 2025 (Effective Date), by and between: Seller: MRKT Services LTD 128 City Road, London, United Kingdom, EC1V 2NX and Buyer: Seebeks Corp. , a Wyoming corporation Avda. Diagonal, 571 Planta 2, 08029 Barcelona, Spain Collectively referred to as the Parties."
+    },
+    {
+      "number": "1",
+      "title": "Subject of the Agreement",
+      "text": "The Seller\nagrees to sell, transfer, and assign to the Buyer, and the Buyer agrees to purchase from the Seller, full rights, title, and interest\nin and to the software product known as Seebeks, including: a web-based application a standalone desktop application, (collectively, the Software), including all\nsource code, object code, documentation, related databases, user interfaces, and associated intellectual property."
+    },
+    {
+      "number": "2",
+      "title": "Purchase Price and Payment Terms",
+      "text": "The total\npurchase price for the Software shall be $41,000 USD (forty-one thousand U.S. dollars), payable by the Buyer in two stages: First Payment: $24,000 (twenty-four thousand U.S. dollars) must be made within 7 to 10 days following\nthe execution of this Agreement. Second Payment: $17,000 (seventeen thousand U.S. dollars) must be made within 5 to 7 days after: - all technical issues identified by the Buyer have been resolved to Buyers satisfaction; and - the Software has been officially released and confirmed as operational."
+    },
+    {
+      "number": "3",
+      "title": "Delivery",
+      "text": "The Seller\nagrees to deliver the full source code and all required documentation and assets of both the web-based and standalone versions of the\nSoftware to the Buyer upon execution of this Agreement and after receipt of the first payment."
+    },
+    {
+      "number": "4",
+      "title": "Warranties and Representations",
+      "text": "The Seller warrants that: it is the sole legal owner of the Software and has full authority to sell it; the Software does not infringe any third-party intellectual property rights; the Software will be free from critical technical issues at the time of final delivery and release. The Buyer\nrepresents that it has the financial capability to make both payments under the agreed terms."
+    },
+    {
+      "number": "5",
+      "title": "Intellectual Property Rights",
+      "text": "Upon receipt\nof the final payment, all intellectual property rights, including but not limited to copyrights, trademarks (if applicable), and any underlying\ntechnology or documentation, shall be irrevocably transferred to the Buyer."
+    },
+    {
+      "number": "6",
+      "title": "Confidentiality",
+      "text": "Both Parties\nagree to keep the terms of this Agreement confidential and shall not disclose them to any third party without prior written consent, except\nas required by law or regulatory authorities."
+    },
+    {
+      "number": "7",
+      "title": "Governing Law",
+      "text": "This Agreement\nshall be governed and construed in accordance with the laws of Wyoming, without regard to its conflict of law provisions."
+    },
+    {
+      "number": "8",
+      "title": "Entire Agreement",
+      "text": "This Agreement\nconstitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes any prior agreements or\nunderstandings, whether written or oral."
+    }
+  ]
+}
