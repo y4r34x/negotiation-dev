@@ -318,6 +318,92 @@ def extract_preamble(soup, first_section_elem) -> str:
     return clean_text(text)
 
 
+def find_exhibits(soup) -> list:
+    """
+    Find all exhibit markers in the document (typically after signature block).
+
+    Exhibits are usually formatted as:
+    <strong><u>EXHIBIT A</u></strong>
+    <strong><u>EXHIBIT TITLE</u></strong>
+
+    Args:
+        soup: BeautifulSoup object
+
+    Returns:
+        List of tuples: (exhibit_name, title, element)
+    """
+    exhibits = []
+    exhibit_pattern = re.compile(r'^EXHIBIT\s+([A-Z]|\d+)$', re.IGNORECASE)
+
+    for p in soup.find_all('p'):
+        # Look for EXHIBIT markers in strong+underline tags
+        strong = p.find('strong')
+        if strong:
+            u_tag = strong.find('u')
+            if u_tag:
+                text = u_tag.get_text(strip=True)
+                match = exhibit_pattern.match(text)
+                if match:
+                    exhibit_name = f"Exhibit {match.group(1).upper()}"
+
+                    # Look for title in next sibling paragraph
+                    title = ""
+                    next_p = p.find_next_sibling('p')
+                    if next_p:
+                        next_strong = next_p.find('strong')
+                        if next_strong:
+                            next_u = next_strong.find('u')
+                            if next_u:
+                                potential_title = next_u.get_text(strip=True)
+                                # Make sure it's not another EXHIBIT marker
+                                if not exhibit_pattern.match(potential_title):
+                                    title = potential_title
+
+                    exhibits.append((exhibit_name, title, p))
+
+    return exhibits
+
+
+def extract_exhibit_content(exhibit_elem, next_exhibit_elem, soup) -> str:
+    """
+    Extract text content for an exhibit.
+
+    Args:
+        exhibit_elem: The exhibit header element
+        next_exhibit_elem: The next exhibit's element or None
+        soup: Root soup object
+
+    Returns:
+        Exhibit text content
+    """
+    content_parts = []
+    found_start = False
+    skip_title = True  # Skip the first line after exhibit name (usually the title)
+
+    for elem in soup.descendants:
+        if elem == exhibit_elem:
+            found_start = True
+            continue
+
+        if not found_start:
+            continue
+
+        if next_exhibit_elem and elem == next_exhibit_elem:
+            break
+
+        if isinstance(elem, NavigableString):
+            text = str(elem).strip()
+            if text and text != '\xa0':
+                # Skip the exhibit title (first non-empty text after exhibit name)
+                if skip_title and text:
+                    skip_title = False
+                    continue
+                content_parts.append(text)
+
+    text = ' '.join(content_parts)
+    return clean_text(text)
+
+
 def parse_html_to_json(file_path: str) -> dict:
     """
     Parse an SEC EDGAR HTML file to structured JSON.
@@ -371,6 +457,19 @@ def parse_html_to_json(file_path: str) -> dict:
                 "number": section_num,
                 "title": title,
                 "text": section_text
+            })
+
+    # Find and extract exhibits (after signature block)
+    exhibits = find_exhibits(soup)
+    for i, (exhibit_name, title, elem) in enumerate(exhibits):
+        next_elem = exhibits[i + 1][2] if i + 1 < len(exhibits) else None
+        exhibit_text = extract_exhibit_content(elem, next_elem, soup)
+
+        if exhibit_text or title:
+            sections.append({
+                "number": exhibit_name,
+                "title": title,
+                "text": exhibit_text
             })
 
     return {

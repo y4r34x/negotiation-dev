@@ -175,6 +175,16 @@
       "number": "7.8",
       "title": "Entire Agreement",
       "text": "If any conflicting Order or invoice arises which does not comply with the terms of this Agreement, the terms identified in this Agreement will prevail. This Agreement represents the complete and entire agreement between Seller and Buyer and supersedes all prior agreements, statements, or negotiations with respect to the subject of Software Support."
+    },
+    {
+      "number": "Exhibit A",
+      "title": "SOFTWARE SUPPORT ORDER",
+      "text": "SOFTWARE SUPPORT ORDER Software Support Rate: Includes up to 20 hours of maintenance and support per month: $3,500 per month Software Support Services: Help Desk: Monday Friday, 8:00 am 6:00 pm PT Outside of these standard hours, emergency help is provided for switch outages 24 x 7 Error resolution, patches, fixes, workarounds Upgrades to update your existing software modules Software diagnostics, remote analysis via secure line provided by Buyer (optional) Initial Contract Value: $21,000 Monthly payments in advance are required as noted in Section 2.2 Rates subject to change as noted in Section 2; additional purchase(s) may result in increased rates"
+    },
+    {
+      "number": "Exhibit B",
+      "title": "WIRE TRANSFER INSTRUCTIONS",
+      "text": "WIRE TRANSFER INSTRUCTIONS Buyer must make payments for Software Support fees to Seller through electronic wire transfer. The following described instructions for payment of funds by wire transfer:"
     }
   ]
 }

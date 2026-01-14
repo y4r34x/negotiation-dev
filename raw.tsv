@@ -1,2 +1,37 @@
-idx	is_type_support	auto_renew_allowed	term_months	termination_notice_days	are_prices_adjustable	price_change_notice_days	price_change_requirements_consent	no_price_changes_period_days	is_payment_monthly	is_payment_upfront	buyer_pays_expenses	expenses_include_travel	expenses_include_meals	expenses_include_transportation	expenses_include_accomodations	is_payment_wired	exists_proper_use_term	are_upgrades_provided	warranty_months	max_indirect_damages_dollars	max_direct_damages_dollars	max_liability_all_causes_dollars	exists_nonperformance_prorated_refund	sla_tiers	sla_has_service_credits	sla_credit_cap_pct	sla_response_mins_critical_tier	sla_fulltime_if_critical_tier	sla_fix_days_medium_tier	sla_fix_days_low_tier	sla_goals_strict	statute_of_limitations_months	is_breach_statute_period_trigger	exists_renegotiation_of_unenforceable_terms	is_law_buyers_state	is_arbitration_buyers_state	mediation_before_court	price_monthly_dollars	paid_mothly
-0	1	1	6	30	1	30	1	180	1	1	1	1	1	1	1	1	1	1	0	0	0	21000	1	3	0	0	30	1	5	999	0	12	1	1	1	0	1	3500	1
+i	m	m	m	m	m	m	m			m	0	1	2	3				4	5	6		7	8	9			10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25	26	27	28	29				30	31	32	33	34	35	36	37	38	39	40	41	42	43	44	45	46	47
+idx	form	exhibit	date	buyer	buyer_location	seller	seller_location	issuer	issuer_location	url	agreement_type	license_transferable	sublicensing	exclusive	title_and_interest_sold	ip_sold	deliverables	fee_model	fee_type	fee_amount	fee_mode	fee_percent	charged_per	payment_freq	tranche_trigger	delivery_trigger	auto_renews	term	can_terminate	termination_notice	breach_terminable	breach_notice	breach_prorated	coc_terminable	coc_notice	derivative_work_owned_by	prices_adjustable	price_change_notice	price_change_requires	no_price_changes	payment_timing	who_pays_sales_tax	who_pays_expenses	expenses_include	payment_method	are_upgrades_provided	reps_and_warranties_mutual	reps_and_warranties_seller	reps_and_warranties_buyer	warranty_period	indemnification	indemnity_notify	indemnity_discovery_trigger	liable_for_indirect_damages	max_liability	liability_time_limit	has_sla	sla_tiers	sla_has_service_credits	sla_credit_cap_pct	sla_critical_response	sla_critical_fulltime	sla_medium_fix	sla_low_fix_required	sla_goals_strict	law_in_state_of	arbitration_in_state_of
+0	10-K	10.6	2/13/25	nexscient	DE	i2 analytics	CA			https://www.sec.gov/Archives/edgar/data/1976663/000147793225007240/nexscient_ex106.htm	support				no	no	support	subscription	fixed	3500	dollars		month	monthly			yes	6mo	either side	1mo	yes	1mo	yes				yes	1mo	consent	6mo	start + 0d		buyer	"travel, meals, transportation, accommodations"	wire	yes				0mo				no	1x amount paid	12mo	yes	3	0	0	30m	yes	5d	no	no	DE	CA
+1	8-K	10.8	12/28/22	homeowners choice managers	FL	exzeo usa	FL			https://www.sec.gov/Archives/edgar/data/1873951/000119312525216498/d28749dex108.htm	license	no	no	no	no	no	license	usage	percentage			0.06	claim	quarterly			yes	5y	either side	6mo	yes	1mo		yes	3mo	seller	yes				end + 30d	buyer				yes				0mo	mutual	1y	constructive	no	1x amount paid	12mo	no									FL	FL
+2	8-K	10.1	7/15/25	phoenix plus corp	NV	sunray equity group	BVI			https://www.sec.gov/Archives/edgar/data/1785493/000164117225020156/ex10-1.htm	purchase				yes	yes	"software, docs, trade secrets"	flat	fixed	960000	stock			1					mutual agreement	immediate												seller	buyer	negotiation			"ability to execute agreement, 
+prereqs will be done, 
+lawful agreement, 
+no adverse pending litigation, 
+competent counsel"	"sole ownership of software, 
+no third parties have licenses, 
+no misappropriation, 
+no third party IP infringement, 
+software not indecent, 
+trade secret and source code not disclosed, docs are accurate and complete, 
+software functions, 
+software made with good industry practice, 
+software only operated according to docs, software meets legal requirements, 
+all information is accurate, 
+disclosed influential facts to purchase decision"			seller indemnifies buyer															Malaysia	Malaysia
+3	8-K	10.2	5/26/25	seebeks	WY	mrkt services	UK				purchase				yes	yes	"software, docs, trade secrets"	tranche	fixed	20500	dollars			2	software operational	first payment																						"sole ownership of software,
+no third party IP infringement, 
+software functions"	ability to pay																	WY	WY
+4	8-K	10.1	1/23/25	irace technology	BVI	aurelius group	Syechelle	starbox group	cayman islands		purchase				yes	yes	"software, docs, trade secrets"	flat	fixed	16000000	stock			1					mutual agreement	immediate												seller	buyer	negotiation			"ability to execute agreement, 
+lawful agreement, 
+no adverse pending litigation, 
+competent counsel, 
+prereqs already done, "	"sole ownership of software, 
+no third parties have licenses, 
+no misappropriation, 
+no third party IP infringement, 
+software not indecent, 
+trade secret and source code not disclosed, docs are accurate and complete, 
+software functions, 
+software made with good industry practice, 
+software only operated according to docs, software meets legal requirements, 
+all information is accurate, 
+disclosed influential facts to purchase decision"																		Malaysia	Malaysia
